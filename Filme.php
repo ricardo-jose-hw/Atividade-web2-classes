@@ -25,8 +25,8 @@
     
     public function informacao() {
         echo "<h2>Seguem as informações do filme:</h2> 
-           <p>O filme é: <strong>{$this->titulo}</strong><p>
-            <p>Com o valor: <i>{$this->getValor()}</i><p>    
+           <p>O filme é: <strong>{$this->titulo}</strong></p>
+            <p>Com o valor: <i>{$this->getValor()}</i></p>    
             ";
     }
     
