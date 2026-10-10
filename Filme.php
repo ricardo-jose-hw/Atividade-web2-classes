@@ -1,7 +1,7 @@
 <?php
  class Filme {
     static public function cinema() {
-        echo "Martins";
+        echo "<h1> Cinema: Martins</h1>";
     }
 
 
@@ -19,20 +19,21 @@
         return $this->valor;
     }
     public function setValor($valor) {
-        $this->valor = $valor;
+        return $this->valor = $valor;
     }
 
     
     public function informacao() {
-        echo "<h2>Seguem as informações do filme:<h2> 
-            <p>O cinema é: {$this->cinema()}<p>
-           <p>O filme é: {$this->titulo}<p>
-            <p>Com o valor: {$this->getValor()}<p>    
+        echo "<h2>Seguem as informações do filme:</h2> 
+           <p>O filme é: <strong>{$this->titulo}</strong><p>
+            <p>Com o valor: <i>{$this->getValor()}</i><p>    
             ";
     }
     
 
 
 }
+
+
 
 ?>
