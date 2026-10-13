@@ -15,10 +15,10 @@ class Sessao3D extends Filme implements IAdicional {
 
     }
     public function informacao() {
-        echo  "<h2>Seguem as informações do filme:</h2>
+        echo  "<h2>Seguem as informações <strong>adicionais</strong> do filme:</h2>
             <p>É um filme 3D.</p> 
-           <p>O filme é: {$this->titulo}</p>
-            <p>Com o valor: {$this->getValor()}</p>    
+           <p>O titulo filme é: {$this->titulo}</p>
+            <p>Com o valor: R$ {$this->getValor()}</p>    
             ";
     }
 public function valorAdicional($valor){

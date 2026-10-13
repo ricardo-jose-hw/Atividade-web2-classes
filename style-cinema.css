@@ -1,0 +1,118 @@
+     * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eeeeee;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+    
+        .topo {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+            .topo {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .topo h2 {
+            margin-top: 0;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input {
+            padding: 8px;
+            width: 100%;
+        }
+
+        button {
+            padding: 10px 16px;
+            background-color: #172554;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button.tres-d {
+            background-color: #7c3aed;
+        }
+
+     
+        .baixo {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 10px 20px 30px;
+        }
+
+        .limpar {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+    
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: clamp(10px, 3vw, 30px);
+            padding: 10px; 
+        }
+
+        .banner {
+            background-color: #172554;
+            color: white;
+            padding: clamp(10px, 3vw, 25px);
+            border-radius: 10px;
+            font-size: clamp(12px, 2.5vw, 16px);
+            overflow-wrap: anywhere;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .banner:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+            position: relative;
+            z-index: 1;
+        }
+
+        .banner.sessao3d {
+            background-color: #4c1d95;
+        }
+
+        .banner h1 {
+            font-size: clamp(14px, 3vw, 22px);
+        }
+
+        .banner h2 {
+            font-size: clamp(14px, 3vw, 22px);
+        }
+
+        .selo {
+            display: inline-block;
+            background-color: #facc15;
+            color: #000;
+            font-weight: bold;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        .preco {
+            color: #86efac;
+            font-size: clamp(14px, 3.5vw, 22px);
+        }
